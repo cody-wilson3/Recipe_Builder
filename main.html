@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Recipe Card Builder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <script src="JSsource.js" defer></script>
+</head>
+
+<body>
+    <h1>World Recipeace Recipe Builder</h1>
+    <div id="content">
+        <img src="Plaid.jpg" alt="Plaid Background" id="plaidImage">
+        <div id="paper">
+            <div id="firstLine">
+                <input id="recipeTitle" type="text" placeholder="Recipe Title" aria-label="Recipe title text box"
+                    aria-description="type the Recipe Title here">
+                <img src="Cutlery-Graphic.jpg" alr="Cutlery-Graphic">
+            </div>
+            <div id="secondLine">
+                <span>Ingredients</span>
+                <span>Instructions</span>
+            </div>
+            <div class="thirdLine">
+                <div>
+                    <input class="smallerInput" ; id="Ingredient" ; type="text" ; placeholder="Add Ingredient Here"
+                        aria-label="Recipe ingredient text box"
+                        aria-description="type an ingredient and press enter or click the add button"><button
+                        class="addButtons" id="ingrAdd" type="button" aria-label="add ingredient">Add</button>
+                </div>
+                <div>
+                    <input class="smallerInput" ; id="Instruction" ; type="text" ; placeholder="Add Instruction Here"
+                        aria-label="Recipe instruction text box"
+                        aria-description="type an instruction and press enter or click the add button"><button
+                        class="addButtons" id="instAdd" type="button" aria-label="add instruction">Add</button>
+                </div>
+            </div>
+            <div class="thirdLine" id="lists">
+                <ul class="list" id="addIngr"></ul>
+                <ul class="list" id="addInst"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="lastLine">
+        <button class="lastButtons" id="reset" aria-label="recipe card reset">Reset</button>
+        <button class="lastButtons" id="saveButton" aria-label="recipe card save">Save Recipe Card</button>
+    </div>
+    <div id="error-message" aria-live="assertive"></div>
+</body>
+
+</html>
